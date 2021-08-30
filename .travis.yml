@@ -12,7 +12,12 @@ cache:
 
 deploy:
   provider: releases
-  github-token: $GH_TOKEN
+  tag_name: p3c-pmd-2.1.0
+  name: p3c-pmd-2.1.0
+  api_key: $GH_TOKEN
   skip_cleanup: true
+  file_glob: true
+  file:
+    - target/p3c-pmd-2.1.1-javadoc.jar
   on:
     tags: true
