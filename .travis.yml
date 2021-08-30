@@ -10,6 +10,10 @@ cache:
   directories:
     - '$HOME/.m2/repository'
 
+branches:
+  only:
+    - master
+
 deploy:
   provider: releases
   tag_name: p3c-pmd-2.1.0
