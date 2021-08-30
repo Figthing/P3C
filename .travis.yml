@@ -16,9 +16,7 @@ branches:
 
 deploy:
   provider: releases
-  tag_name: p3c-pmd-2.1.0
-  name: p3c-pmd-2.1.0
-  github-token: $GH_TOKEN
+  api_key: $GH_TOKEN
   skip_cleanup: true
   file_glob: true
   file:
